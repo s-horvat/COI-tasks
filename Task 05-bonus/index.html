@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Bonus</title>
+  </head>
+
+  <body>
+    <section class="game">
+      <h1 class="game__main-title">Dice toss</h1>
+      <div>
+        <span>Turn:</span>
+        <span class="game__turn">0</span>
+      </div>
+
+      <div class="game__container">
+        <div class="game__player">
+          <span>Player Score:</span>
+          <div class="game__layout">
+            <div class="game__score-player">0</div>
+          </div>
+        </div>
+        <div class="game__computer">
+          <span>Computer Score:</span>
+          <div class="game__layout">
+            <div class="game__score-computer">0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game__container">
+        <div class="game__player">
+          <span>Player toss score:</span>
+          <div class="game__layout">
+            <div class="game__player-dice">0</div>
+            <span class="game__devider">|</span>
+            <div class="game__player-dice">0</div>
+          </div>
+        </div>
+        <div class="game__computer">
+          <span>Computer toss score:</span>
+          <div class="game__layout">
+            <div class="game__computer-dice">0</div>
+            <span class="game__devider">|</span>
+            <div class="game__computer-dice">0</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="game__btn">TOSS DICE</button>
+
+      <div class="game__winner"></div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

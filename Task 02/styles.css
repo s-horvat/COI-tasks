@@ -1,0 +1,174 @@
+:root {
+  --primary-font: "Barlow Condensed", sans-serif;
+  --secondary-font: "Rajdhani", sans-serif;
+}
+* {
+  font-family: var(--primary-font);
+}
+
+.mixers,
+.mixers__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mixers {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.mixers__main-title,
+.mixers__secondary-title {
+  text-transform: uppercase;
+}
+.mixers__main-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: var(--primary-font);
+}
+.mixers__info {
+  font-family: var(--secondary-font);
+  padding: 0 1rem;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  margin: auto;
+  margin: 1rem 0;
+  text-align: center;
+}
+.mixers__btn {
+  border: none;
+  background-color: white;
+  text-decoration: underline;
+}
+.mixers__cocktail-img {
+  position: relative;
+  border-radius: 50%;
+  width: 304px;
+  height: 304px;
+  object-fit: cover;
+}
+.mixers__btn {
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-underline-offset: 2px;
+}
+.mixers__container {
+  position: relative;
+  padding-bottom: 64px;
+  margin: auto;
+  width: 304px;
+}
+
+.mixers__decoration-img {
+  width: 135.11px;
+  height: 135.11px;
+  position: absolute;
+  overflow: hidden;
+  object-fit: cover;
+}
+.mixers__decoration-img--tl {
+  left: -27px;
+  top: -5px;
+}
+.mixers__secondary-title {
+  margin-top: 2rem;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  line-height: 26px;
+
+  letter-spacing: 0.005px;
+  /* Can't be rendered via editor. In browser, using this letter-spacing makes title width pixel perfect*/
+}
+.test2 {
+  display: none;
+}
+.test {
+  display: inline;
+}
+.mixers__decoration-img--tr {
+  top: -24px;
+  right: -7px;
+}
+.mixers__decoration-img--bl {
+  left: -24px;
+  bottom: 107px;
+}
+.mixers__decoration-img--br {
+  right: -10px;
+  bottom: 107px;
+}
+@media only screen and (min-width: 1000px) {
+  .mixers__layout {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .test {
+    display: none;
+  }
+  .test2 {
+    display: inline;
+  }
+  .mixers__btn {
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .mixers__layout {
+    width: 1312px;
+    gap: 7.25em;
+  }
+  .mixers__main-title {
+    font-size: 54px;
+    width: 244px;
+  }
+
+  .mixers__container {
+    width: unset;
+    padding-bottom: unset;
+    justify-content: unset;
+  }
+  .mixers__secondary-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .mixers__info {
+    font-size: 24px;
+    line-height: 31px;
+    width: 700px;
+    padding: unset;
+    margin: 16px 0 116px 0;
+  }
+  .mixers__btn {
+    font-size: 20px;
+    margin-bottom: 67px;
+  }
+  .mixers__decoration-img {
+    width: 160px;
+    height: 160px;
+  }
+  .mixers__decoration-img--tl {
+    right: -28px;
+    bottom: -19px;
+  }
+  .mixers__decoration-img--bl {
+    left: 12px;
+    bottom: 56px;
+  }
+  .mixers__decoration-img--tr {
+    top: -24px;
+    right: 25px;
+  }
+  .mixers__decoration-img--br {
+    right: -6px;
+    bottom: 59px;
+  }
+}

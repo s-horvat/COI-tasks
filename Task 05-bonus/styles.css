@@ -1,0 +1,63 @@
+.game,
+.game__container,
+.game__player,
+.game__computer,
+.game__layout {
+  display: flex;
+}
+.game {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.game__container {
+  max-width: 1250px;
+  width: 100%;
+  margin-top: 3rem;
+  justify-content: space-around;
+}
+.game__player,
+.game__computer {
+  flex-direction: column;
+}
+.game__layout {
+  justify-content: center;
+}
+.game__main-title {
+  font-size: x-large;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+.game__container {
+  margin-bottom: 10rem;
+}
+.game__score-computer,
+.game__score-player {
+  font-weight: 600;
+  font-size: larger;
+}
+.game__btn {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: rgb(26, 104, 173);
+  color: white;
+  font-size: larger;
+}
+
+.game__winner {
+  position: fixed;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #5cdf97;
+  pointer-events: none;
+  z-index: 10;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.game__player-dice,
+.game__computer-dice {
+  font-size: large;
+  padding: 0 0.5rem;
+}
